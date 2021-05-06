@@ -3,7 +3,7 @@
 describe('My fourth test suite', function() {
         
     it('My fourth test case', () => {
-        cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
+        cy.visitAutomationPractice()
         
         //show alert
         cy.get('#alertbtn').click()

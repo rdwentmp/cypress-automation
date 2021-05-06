@@ -1,6 +1,5 @@
 /// <reference types="Cypress" />
-import ProductPage from '../pageObjects/ProductPage'
-
+import ProductPage from '../../support/pageObjects/ProductPage'
 
 describe('Shop suite', () =>  
 {
@@ -10,11 +9,11 @@ describe('Shop suite', () =>
         {
             this.data=data      
         })
+        cy.visitShop()
     })
 
     it('Use fixture test case', function() {
         const productPage=new ProductPage()
-            cy.visit("https://rahulshettyacademy.com/angularpractice/shop")
 
         // select each product from example table
         this.data.productName.forEach(function(element) {

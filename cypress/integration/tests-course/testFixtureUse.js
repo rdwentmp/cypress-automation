@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 /// <reference types="cypress-iframe" />
 import 'cypress-iframe'
-import HomePage from '../pageObjects/HomePage'
+import HomePage from '../../support/pageObjects/HomePage'
 
 describe('Frames suite', () =>  
 {
@@ -19,7 +19,7 @@ describe('Frames suite', () =>
     it('Use fixture test case', function() {
         // create object for Object model
         const homePage= new HomePage()
-            cy.visit("https://rahulshettyacademy.com/angularpractice/")
+        cy.visitAngularPractice()
         homePage.getEditBox().type(this.data.name)
         homePage.getEmail().type(this.data.mail)
         homePage.getGender().select(this.data.gender)

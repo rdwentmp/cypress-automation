@@ -31,3 +31,21 @@ Cypress.Commands.add('selectProduct', (productNmae) => {
         }
     }) 
 })
+
+Cypress.Commands.add("visitShop", () => {
+  cy.visit("/angularpractice/shop")
+});
+
+Cypress.Commands.add("visitAutomationPractice", () => {
+  cy.visit("/AutomationPractice/")
+});
+
+Cypress.Commands.add("visitAngularPractice", () => {
+  cy.visit("/angularpractice/")
+});
+
+Cypress.Commands.add("visitSeleniumPractice", () => {
+  cy.visit("/seleniumPractise/")
+});
+
+

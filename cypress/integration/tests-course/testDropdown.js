@@ -3,7 +3,7 @@
 describe('My fourth test suite', function() {
         
     it('My fourth test case', () => {
-        cy.visit('https://rahulshettyacademy.com/AutomationPractice/#/')
+        cy.visitAutomationPractice()
 
         //Static dropdown
         cy.get('select').select('option3').should('have.value','option3')

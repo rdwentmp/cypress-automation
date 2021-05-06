@@ -12,7 +12,7 @@ describe('Shop suite', () =>
     })
 
     it('Use fixture test case', function() {
-        cy.visit("https://rahulshettyacademy.com/angularpractice/")
+        cy.visitAngularPractice()
         cy.get('input[name="name"]:nth-child(2)').type(this.data.name)
         cy.get('input[name="email"]:nth-child(2)').type(this.data.mail)
         cy.get('select').select(this.data.gender)

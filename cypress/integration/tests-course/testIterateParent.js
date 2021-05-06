@@ -3,7 +3,7 @@
 describe('My second test suite', function() {
         
     it('My second test case', () => {
-        cy.visit('https://rahulshettyacademy.com/seleniumPractise/#/')
+        cy.visitSeleniumPractice()
         cy.get('.search-keyword').type('ca')
         cy.wait(2000)
         cy.get('.products').as('productLocator')
@@ -20,6 +20,5 @@ describe('My second test suite', function() {
         cy.contains('Place Order').click()
         cy.get('.chkAgree').click()
         cy.contains('Proceed').click()
-        // cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
     })
 })

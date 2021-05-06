@@ -3,7 +3,7 @@
 describe('My first test suite', function() {
         
     it('My first test case', () => {
-        cy.visit("https://rahulshettyacademy.com/AutomationPractice/")
+        cy.visitAutomationPractice()
         
         cy.get('tr td:nth-child(2)').each(($el, index, $list) => {
             const text=$el.text()
