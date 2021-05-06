@@ -23,3 +23,11 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('selectProduct', (productNmae) => { 
+    cy.get('h4.card-title').each(($el, index, $list) => {
+        if($el.text().includes(productNmae))
+        {
+            cy.get('button.btn.btn-info').eq(index).click()
+        }
+    }) 
+})
