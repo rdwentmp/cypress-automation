@@ -12,6 +12,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Reports
+cypress/videos/
+mochawesome-report/
+
 # Dependency directories
 node_modules/
 jspm_packages/

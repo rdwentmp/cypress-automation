@@ -1,6 +1,7 @@
 {
     "defaultCommandTimeout": 10000,
     "pageLoadTimeout": 100000,
+    "reporter": "mochawesome",
     "baseUrl": "https://rahulshettyacademy.com",
     "env": {
         "url": "https://rahulshettyacademy.com/angularpractice/"
